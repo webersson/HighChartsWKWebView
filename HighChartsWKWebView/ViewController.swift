@@ -1,10 +1,4 @@
-//
-//  test2.swift
-//  WebView
-//
-//  Created by Albrecht Weber on 10.07.17.
-//  Copyright © 2017 Aland Kawa. All rights reserved.
-//
+
 
 import Cocoa
 import WebKit
