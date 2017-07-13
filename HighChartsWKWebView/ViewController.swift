@@ -27,9 +27,9 @@ class ViewController: NSViewController, WKNavigationDelegate {
 //      "var viewport = document.querySelector(\"meta[name=viewport]\");" +
 //      "viewport.setAttribute('content', 'width=device-width, initial-scale=0.5, user-scalable=0');" +
             
-        // It is not the best way to load the whle page each time, a better way would be this:
+        // It is not the best way to load the whole page each time, a better way would be this:
 /*
-        "var chartDiv = document.querySelector('.panel-body');" +
+        "var chartDiv = document.querySelector('.col-xs-12.tab-content');" +
         "document.body.innerHTML = '';" +
         "document.body.append(chartDiv);"
 */
