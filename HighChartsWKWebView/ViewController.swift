@@ -24,15 +24,24 @@ class ViewController: NSViewController, WKNavigationDelegate {
         
         let script =
         
-//                "var viewport = document.querySelector(\"meta[name=viewport]\");" +
-//                "viewport.setAttribute('content', 'width=device-width, initial-scale=0.5, user-scalable=0');" +
+//      "var viewport = document.querySelector(\"meta[name=viewport]\");" +
+//      "viewport.setAttribute('content', 'width=device-width, initial-scale=0.5, user-scalable=0');" +
+            
+        // It is not the best way to load the whle page each time, a better way would be this:
+/*
+        "var chartDiv = document.querySelector('.panel-body');" +
+        "document.body.innerHTML = '';" +
+        "document.body.append(chartDiv);"
+*/
+        // but in this case, the timeperiod slider looses functionality as well.
+        // So I came up with this workaround:
         
                 "var chartDiv = document.querySelector('.col-xs-12.tab-content');" +
                 "document.querySelectorAll('body > *').forEach(function(el) { el.style.display = 'none'; });" +
                 
                 "document.body.append(chartDiv);" +
                     
-                 // scaling: timeperiod slider doesn´t work after that
+                 // scaling: timeperiod slider doesn´t work after the following line:
                 "document.body.style.webkitTransform = 'scale(0.5)';"
         
      
