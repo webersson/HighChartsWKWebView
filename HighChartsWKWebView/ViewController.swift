@@ -25,12 +25,14 @@ class ViewController: NSViewController, WKNavigationDelegate {
         let script =
         
 //                "var viewport = document.querySelector(\"meta[name=viewport]\");" +
-//                "viewport.setAttribute('content', 'width=device-width, initial-scale=0.4, user-scalable=0');" +
+//                "viewport.setAttribute('content', 'width=device-width, initial-scale=0.5, user-scalable=0');" +
         
                 "var chartDiv = document.querySelector('.col-xs-12.tab-content');" +
                 "document.querySelectorAll('body > *').forEach(function(el) { el.style.display = 'none'; });" +
                 
                 "document.body.append(chartDiv);" +
+                    
+                 // scaling: timeperiod slider doesn´t work after that
                 "document.body.style.webkitTransform = 'scale(0.5)';"
         
      

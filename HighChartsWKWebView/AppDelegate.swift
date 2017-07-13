@@ -1,10 +1,3 @@
-//
-//  AppDelegate.swift
-//  HighChartsWKWebView
-//
-//  Created by Albrecht Weber on 13.07.17.
-//  Copyright © 2017 Albrecht Weber. All rights reserved.
-//
 
 import Cocoa
 
